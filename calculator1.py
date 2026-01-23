@@ -11,13 +11,14 @@ while True:
     print('7 - show my history')
     print('8 - Exit')
     choice=input("Enter your choic here pleas:")
-
-    try:
-     num1=float(input('Enter the first number here:'))
-     num2=float(input("Enter the second number here:"))
-    except:
-      print('ERROR: pleas enter vaild number')
-      continue
+    
+    if choice!="7":
+       try:
+           num1=float(input('Enter the first number here:'))
+           num2=float(input("Enter the second number here:"))
+       except:
+           print('ERROR: pleas enter vaild number')
+           continue
     
 
 
@@ -62,4 +63,5 @@ while True:
        print('good bay')
        break
     else:
+
         print('ERROR')
